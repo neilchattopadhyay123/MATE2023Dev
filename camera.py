@@ -137,7 +137,7 @@ class Camera(object):
 
         _, image = self._cam.read()
 
-        image = cv2.cvtColor(image, self._fmt)
+        # image = cv2.cvtColor(image, self._fmt)
 
         flip_code = None
         if self._flipx:
@@ -151,8 +151,8 @@ class Camera(object):
         if flip_code is not None:
             image = cv2.flip(image, flip_code)
 
-        image = numpy.fliplr(image)
-        image = numpy.rot90(image)
+        # image = numpy.fliplr(image)
+        # image = numpy.rot90(image)
 
         return image
         
