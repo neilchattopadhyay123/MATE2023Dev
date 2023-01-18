@@ -10,7 +10,7 @@ os.environ['SDL_VIDEO_CENTERED'] = '1'
 padding_x = 75
 padding_y = 25
 
-screen_size = (1280, 720) # 900p
+screen_size = (1280, 720) # 720p
 
 pygame.init()
 
@@ -26,6 +26,7 @@ def main():
     camera.start()
 
     while True:
+        # renders camera feed
         camera.get_surface(dest_surf=screen)
 
         clock.tick(30)
