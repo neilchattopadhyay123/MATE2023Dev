@@ -24,6 +24,7 @@ screen = pygame.display.set_mode(screen_size)
 
 def main():
     camera.start()
+    camera.set_controls(1, None, None)
 
     while True:
         # renders camera feed
