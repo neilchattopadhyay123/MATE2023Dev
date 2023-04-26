@@ -52,8 +52,3 @@ for i in range(len(greenMaskFinal2)):
 
 print(str(newAlive) + " corals went dead to alive")
 print(str(newDead) + " corals went from alive to dead")
-
-cv.imshow('Mask', greenMask)
-cv.waitKey(0)
-cv.imshow('Mask2', greenMask2)
-cv.waitKey(0)
